@@ -16,6 +16,8 @@ nav.menu {
   top: 0;
   width: 100%;
   background-color: darkred;
+  border: 15px ridge gold;
+  font-family: Consolas;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
@@ -56,8 +58,8 @@ header.topo {
 }
 img{
   width: 100%;
-  
 }
+
 /* Conteúdo principal */
 main {
   padding: 30px 20px;
