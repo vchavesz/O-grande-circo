@@ -2,9 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+zzzzzzzzzzzzzzzzzzzzzzzzzzzxd
 }
 
-body {
+b000000000000000000000000000ody {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
   color: #333;
@@ -15,7 +16,7 @@ nav.menu {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: darkred;
+  background: darkred;
   border: 15px ridge gold;
   font-family: Consolas;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -54,7 +55,7 @@ header.topo {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-
+ 
 }
 img{
   width: 100%;
@@ -64,13 +65,28 @@ img{
 main {
   padding: 30px 20px;
   text-align: center;
+  font-family: Consolas;
 }
+
+
+#brambila{
+  
+  width: 450px;
+}
+
+
+
+
 
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #ddd;
   margin-top: 40px;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #2f2c79;
+  padding: 20px;
+  border-radius: 8px;
+  border:15px double;
 }
 
 /* Responsivo para telas menores */
