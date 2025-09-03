@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+ @font-face {
+        font-family: "letra"; 
+        src: url(Braceletvictorian-DGld.ttf);
+           
+    }
+
 body {
   background: linear-gradient(to bottom, darkred, darkred, goldenrod);
   font-family: Arial, sans-serif;
@@ -55,6 +61,11 @@ header.topo {
   justify-content: center;
   overflow: hidden;
 }
+.favicon {
+  width: 10px;          
+  height: 10px;
+
+}
 
 header.topo img {
   width: 100%;
@@ -76,6 +87,16 @@ main {
   gap: 30px;
   flex-wrap: wrap;
   margin-top: 30px;
+}
+b {
+  margin: 10px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+b:hover {
+  color: darkred;
 }
 
 .imagem-legenda {
@@ -100,7 +121,7 @@ main {
 }
 
 h1{
-
+font-family: letra;
 }
 
 
@@ -111,6 +132,7 @@ h1{
 footer {
   text-align: center;
   margin-top: 40px;
+  font-family: Consolas;
   font-size: 0.9rem;
   color: white;
   background: linear-gradient(to bottom, darkred, goldenrod);
