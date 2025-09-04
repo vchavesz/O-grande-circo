@@ -1,0 +1,105 @@
+header {
+  text-align: center;
+  padding: 20px;
+  color: gold;
+  font-family: consolas;
+  text-shadow: 10px 9px 10px #000;
+}
+main {
+  margin: 50px;
+  font-family: consolas;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 400px;
+  
+}
+
+.globo {
+  width: 520px;
+  border: 15px ridge silver;
+  float: left;
+  margin-right: 25px;
+  box-shadow: 10px 10px black;
+}
+
+h2 {
+  text-shadow: 10px 9px 10px #000;
+  color: darkorange;
+  
+}
+
+.Pirofagia {
+  width: 520px;
+  height: 360px;
+  border: 15px ridge silver;
+  float: left;
+  margin-right: 25px;
+  box-shadow: 10px 10px black;
+}
+
+.Equilibrismo {
+  width: 520px;
+  height: 360px;
+  border: 15px ridge silver;
+  float: left;
+  margin-right: 25px;
+  margin-bottom:11px;
+  box-shadow: 10px 10px black;
+}
+ 
+.Palhaco {
+  width: 520px;
+  height: 360px;
+  border:15px ridge silver;
+  float: left;
+  margin-right: 25px;
+  box-shadow: 10px 10px black;
+}
+
+
+footer {
+  color: yellow;
+  text-align: center;
+  text-shadow: 10px 9px 10px #000;
+  
+}
+  
+body {
+  background: linear-gradient(to bottom, blue, red);
+}
+  
+.top-icon:hover {
+  background: rgba(0,0,0,0.4);
+  transform: scale(1.2);
+  transition-property: transform, background;
+  transition-duration: 1s, 2s;
+}
+
+div.top-icon {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  bottom: 20px;
+  right: 20px;
+  border: 2px dotted black;
+  padding: 5px;
+  transition-property: transform;
+  transition-duration: 3s;
+}
+
+.seta {
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 10px 10px black;
+  border: 7px groove lime;
+
+}
+
+selector {
+  color: white;
+}
