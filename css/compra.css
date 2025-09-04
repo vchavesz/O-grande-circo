@@ -1,0 +1,43 @@
+header{
+  text-align: center;
+  background: linear-gradient(to bottom, blue, purple);
+  padding: 10px;
+  color: white;
+  border:15px ridge gold;
+     text-shadow: 10px 9px 10px #000;
+}
+
+p{
+  text-align: center;
+  font-family: Consolas;
+  color: white;
+}
+
+h1{
+ font-family: consolas;
+ text-align: center;
+  text-shadow: 10px 9px 10px #000
+}
+
+h2{
+ font-family: Consolas; 
+}
+
+img{
+  height: 330px;
+  width: 30%;
+  mix-blend-mode: 
+}
+
+body{
+  background: linear-gradient(to bottom, blue, purple);
+}
+
+li{
+  background: white;
+  height: 50px
+}
+
+strong{
+  font-family: Consolas;  
+}
