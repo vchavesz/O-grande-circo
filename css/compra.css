@@ -25,19 +25,38 @@ h2{
 
 img{
   height: 330px;
-  width: 30%;
-  mix-blend-mode: 
+  width: 102%;
 }
 
 body{
   background: linear-gradient(to bottom, blue, purple);
 }
 
-li{
-  background: white;
-  height: 50px
+
+tr:nth-child(even) {
+  background-color: grey;
+  
+}
+ td{
+  padding: 12px 15px;
+  text-align: left;
 }
 
-strong{
-  font-family: Consolas;  
+table{
+      width: 80%;
+      margin: auto;
+      border-collapse;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);      
+}
+
+tr:hover{
+  background-color: red;
+  cursor: pointer;
+}
+
+section{
+  font-family: Consolas;
+  margin-left: 10%;
+  margin-right: 10%;
 }
