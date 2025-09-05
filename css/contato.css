@@ -1,0 +1,45 @@
+          header {
+              text-align: center;
+              background-color: darkred;
+              padding: 10px;
+              color: white;
+              border: 15px ridge gold;
+              text-shadow: 10px 9px 10px #000
+          }
+
+          p {
+              text-align: center;
+              font-family: Consolas;
+          }
+
+          li {
+              font-family: consolas;
+              text-align: center;
+              background: blue;
+          }
+
+          h1 {
+              font-family: consolas;
+              text-align: center;
+              text-shadow: 10px 9px 10px #000
+          }
+
+          footer {
+              background: #2f2c79;
+              height: 50px;
+              text-align: center;
+              text-shadow: 10px 9px 10px #000
+          }
+
+          address {
+              text-align: center;
+          }
+
+          footer {
+              color: white;
+              border: 15px double;
+          }
+
+          body {
+              background: purple;
+          }
