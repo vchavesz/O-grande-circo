@@ -29,7 +29,11 @@ img{
 }
 
 body{
-  background: linear-gradient(to bottom, blue, purple);
+  background: purple;
+}
+
+th{
+  background-color: pink;
 }
 
 
@@ -59,4 +63,24 @@ section{
   font-family: Consolas;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+p{
+  color: white;
+}
+
+footer {
+              background:;
+              height: 50px;
+              text-align: center;
+              text-shadow: 10px 9px 10px #000;
+              border: 15px double;
+          }
+
+/* Responsividade prea telas menores */
+@media (max-width: 700px) {
+  main {
+    margin: 10px;
+    padding: 10px;
+  }
 }
