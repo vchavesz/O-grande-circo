@@ -1,82 +1,80 @@
+/* Fonte personalizada */
+@font-face {
+  font-family: FineNYCShop;
+  src: url("../fonte.letras.ttf");
+}
+
+/* Estilo geral */
+body {
+  background: linear-gradient(to bottom, blue, red);
+  margin: 0;
+  padding: 0;
+  font-family: consolas;
+  color: white; 
+}
+
+/* Cabeçalho */
 header {
   text-align: center;
   padding: 20px;
-  color: gold;
-  font-family: consolas;
+  font-family: FineNYCShop;
   text-shadow: 10px 9px 10px #000;
 }
+
+/* Conteúdo principal */
 main {
   margin: 50px;
-  font-family: consolas;
   background-color: transparent;
   padding: 20px;
   border-radius: 10px;
-  min-width: 400px;
-  
+  max-width: 100%;
 }
 
-.globo {
-  width: 520px;
-  border: 15px ridge silver;
-  float: left;
-  margin-right: 25px;
-  box-shadow: 10px 10px black;
-}
-
+/* Títulos */
 h2 {
   text-shadow: 10px 9px 10px #000;
-  color: darkorange;
-  
-  
+  color: orange;
+  font-family: FineNYCShop;
 }
 
-.Pirofagia {
-  width: 520px;
-  height: 360px;
-  border: 15px ridge silver;
-  float: left;
-  margin-right: 25px;
-  box-shadow: 10px 10px black;
+/* Textos dos parágrafos */
+p {
+  color: white;
 }
 
-.Equilibrismo {
-  width: 520px;
-  height: 360px;
-  border: 15px ridge silver;
-  float: left;
-  margin-right: 25px;
-  margin-bottom:11px;
-  box-shadow: 10px 10px black;
+/* Listas */
+li {
+  color: white;
 }
 
+/* Imagens das atrações */
+.globo,
+.Pirofagia,
+.Equilibrismo,
 .Palhaco {
   width: 520px;
   height: 360px;
-  border:15px ridge silver;
-  float: left;
+  border: 15px ridge silver;
   margin-right: 25px;
+  margin-bottom: 20px;
   box-shadow: 10px 10px black;
+  display: block;
 }
 
+/* Ajuste específico para .globo */
+.globo {
+  /* float: left; */
+}
 
+/* Rodapé */
 footer {
   color: yellow;
   text-align: center;
   text-shadow: 10px 9px 10px #000;
-  
-}
-  
-body {
-  background: linear-gradient(to bottom, blue, red);
-}
-  
-.top-icon:hover {
-  background: rgba(0,0,0,0.4);
-  transform: scale(1.2);
-  transition-property: transform, background;
-  transition-duration: 1s, 2s;
+  padding: 20px;
 }
 
+/* Ícone de voltar ao topo */
 div.top-icon {
   position: fixed;
   width: 32px;
@@ -89,19 +87,77 @@ div.top-icon {
   transition-duration: 3s;
 }
 
+.top-icon:hover {
+  background: rgba(0, 0, 0, 0.4);
+  transform: scale(1.2);
+  transition-property: transform, background;
+  transition-duration: 1s, 2s;
+}
+
 .seta {
   width: 100%;
 }
 
+/* Vídeos */
 video {
   width: 100%;
   border-radius: 10px;
   box-shadow: 10px 10px black;
   border: 7px groove lime;
-
 }
 
-selector {
+/* Seletor de conteúdo */
+.selector {
   color: white;
-  
+}
+
+/* Imagens responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Layout dos artigos */
+article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Estilo para área de artigo */
+.article {
+  width: 900px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 700px) {
+  main {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .globo,
+  .Pirofagia,
+  .Equilibrismo,
+  .Palhaco {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .top-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .article {
+    width: 100%;
+  }
 }
