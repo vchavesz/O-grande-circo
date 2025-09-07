@@ -5,9 +5,13 @@
 }
 
 @font-face {
-  font-family: "letra";
-  src: url(static/Braceletvictorian-DGld.ttf);
+  font-family: FineNYCShop;
+  src: url("../fonte.letras.ttf");
+}
 
+h1 {
+  font-family: FineNYCShop;
+  color: goldenrod;
 }
 
 body {
@@ -123,10 +127,7 @@ iframe{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-  font-family: consolas;
-  color: darkred;
-}
+
 
 .galeria-grid {
   margin: 100px;
