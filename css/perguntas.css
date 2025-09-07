@@ -1,0 +1,84 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: white;
+  color: white;
+  padding: 20px;
+  background: linear-gradient(to bottom, blue, red);
+}
+
+header {
+  text-align: center;
+  padding: 40px 0;
+  background: darkred;
+  color: white;
+  margin-bottom: 30px;
+  border: 15px ridge gold;
+  font-family: Consolas;
+  text-shadow: 10px 9px 10px #000;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section.faq {
+  background: darkred;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section.faq h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+details {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+details summary:hover {
+  color: #ffcccc;
+  background-color: #660000;
+}
+
+details p {
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #2f2c79;
+  padding: 20px;
+  border-radius: 8px;
+  border: 15px double;
+}
