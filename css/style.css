@@ -8,10 +8,12 @@
   font-family: FineNYCShop;
   src: url("../fonte.letras.ttf");
 }
-
+iframe{
+  
+}
 h1 {
   font-family: FineNYCShop;
-  color: goldenrod;
+  color: white;
 }
 
 body {
