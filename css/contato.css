@@ -1,45 +1,133 @@
-          header {
-              text-align: center;
-              background-color: darkred;
-              padding: 10px;
-              color: white;
-              border: 15px ridge gold;
-              text-shadow: 10px 9px 10px #000
-          }
+          /* Reset e base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-          p {
-              text-align: center;
-              font-family: Consolas;
-          }
+body {
+  background: linear-gradient(to bottom, purple, black);
+  font-family: Consolas, sans-serif;
+  color: white;
+}
 
-          li {
-              font-family: consolas;
-              text-align: center;
-              background: blue;
-          }
+/* Menu fixo */
+nav.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, purple, black);
+  border-bottom: 10px ridge gold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
 
-          h1 {
-              font-family: consolas;
-              text-align: center;
-              text-shadow: 10px 9px 10px #000
-          }
+nav.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+  flex-wrap: wrap;
+}
 
-          footer {
-              background: #2f2c79;
-              height: 50px;
-              text-align: center;
-              text-shadow: 10px 9px 10px #000
-          }
+nav.menu ul li {
+  margin: 0 15px;
+}
 
-          address {
-              text-align: center;
-          }
+nav.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
-          footer {
-              color: white;
-              border: 15px double;
-          }
+nav.menu ul li a:hover {
+  color: #ffd700;
+}
 
-          body {
-              background: purple;
-          }
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 120px 20px 40px;
+}
+
+h1.circo {
+  font-size: 3em;
+  text-shadow: 3px 3px 10px #000;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+section {
+  margin: 40px auto;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffd700;
+}
+
+address {
+  text-align: center;
+  font-style: normal;
+  font-size: 1.1em;
+}
+
+address a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-family: Consolas;
+  font-size: 0.9rem;
+  color: white;
+  background: linear-gradient(to bottom, purple, black);
+  padding: 20px;
+  border-radius: 8px;
+  border: 15px double gold;
+}
+
+footer i {
+  font-size: 1.5em;
+  margin: 0 10px;
+  color: #ffd700;
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
+  nav.menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    padding-top: 160px;
+  }
+
+  section {
+    margin: 20px;
+  }
+}

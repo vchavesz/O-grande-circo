@@ -5,80 +5,151 @@
   box-sizing: border-box;
 }
 
+/* Corpo */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: white;
-  color: white;
-  padding: 20px;
   background: linear-gradient(to bottom, blue, red);
+  color: white;
+  padding-top: 100px; /* espaço para o menu fixo */
 }
 
+/* Menu fixo */
+nav.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, darkred, goldenrod);
+  border-bottom: 10px ridge gold;
+  font-family: Consolas;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+nav.menu ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 15px;
+}
+
+nav.menu ul li {
+  margin: 0 10px;
+}
+
+nav.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav.menu ul li a:hover {
+  background-color: #ffd700;
+  color: darkred;
+}
+
+/* Cabeçalho */
 header {
   text-align: center;
-  padding: 40px 0;
+  padding: 40px 20px;
   background: darkred;
   color: white;
   margin-bottom: 30px;
-  border: 15px ridge gold;
+  border: 10px ridge gold;
   font-family: Consolas;
-  text-shadow: 10px 9px 10px #000;
+  text-shadow: 2px 2px 8px #000;
 }
 
 header h1 {
   font-size: 2.5rem;
 }
 
+/* Conteúdo principal */
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
+  padding: 20px;
 }
 
+/* Seção FAQ */
 section.faq {
   background: darkred;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 section.faq h2 {
   margin-bottom: 20px;
   color: white;
+  font-size: 1.8rem;
 }
 
+/* Detalhes */
 details {
   margin-bottom: 15px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
 }
 
 details summary {
   font-weight: bold;
   cursor: pointer;
-  list-style: none;
   color: white;
-  padding: 5px;
+  padding: 10px;
   border-radius: 4px;
+  background-color: #660000;
   transition: background-color 0.3s, color 0.3s;
 }
 
 details summary:hover {
-  color: #ffcccc;
-  background-color: #660000;
+  background-color: #990000;
+  color: #ffd700;
 }
 
 details p {
   margin-top: 8px;
   margin-left: 20px;
+  color: #fff;
 }
 
+/* Rodapé */
 footer {
   text-align: center;
   margin-top: 40px;
+  font-family: Consolas;
   font-size: 0.9rem;
   color: white;
-  background-color: #2f2c79;
+  background: linear-gradient(to bottom, darkred, goldenrod);
   padding: 20px;
   border-radius: 8px;
-  border: 15px double;
+  border: 10px double gold;
+}
+
+/* Responsividade para celular */
+@media (max-width: 768px) {
+  nav.menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.menu ul li {
+    margin: 10px 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section.faq h2 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 10px;
+  }
 }
